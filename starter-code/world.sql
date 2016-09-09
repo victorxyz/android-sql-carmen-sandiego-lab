@@ -1,5 +1,3 @@
-BEGIN;
-
 CREATE TABLE city (
     id integer NOT NULL,
     name text NOT NULL,
@@ -5341,11 +5339,3 @@ INSERT INTO countrylanguage VALUES ('CAN', 'Eskimo Languages', 'f', 0.1);
 INSERT INTO countrylanguage VALUES ('CHN', 'Dong', 'f', 0.2);
 INSERT INTO countrylanguage VALUES ('RUS', 'Belorussian', 'f', 0.30000001);
 INSERT INTO countrylanguage VALUES ('USA', 'Portuguese', 'f', 0.2);
-
-COMMIT;
-
-ANALYZE city;
-ANALYZE country;
-ANALYZE countrylanguage;
-
-END;
